@@ -44,3 +44,47 @@ Security:
 - The backend does not visit target URLs; it only analyzes the string and optionally calls WHOIS or VirusTotal if enabled.
 - If you enable VirusTotal, be mindful of API limits/terms.
 
+--->TLDR /Exact Commands to run locally
+
+#INSTALLTION ON WINDOWS
+# 1. clone repo
+git clone https://github.com/your-username/PhishShield.git
+cd PhishShield
+
+# 2. create & activate venv
+python -m venv venv
+venv\Scripts\activate
+
+# 3. install deps
+pip install -r requirements.txt
+
+# 4a. (optional) create model files if not included
+python model_train.py   # creates model.pkl + vectorizer.pkl
+
+# 4b. run backend
+python app.py
+
+# 5. open frontend
+# Option 1: double-click frontend.html
+# Option 2 (serve static):
+python -m http.server 8000
+# visit: http://localhost:8000/frontend.html
+
+#INSTALLATION ON LINUX/MACOS
+git clone https://github.com/your-username/PhishShield.git
+cd PhishShield
+
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+# optional train
+python model_train.py
+
+# run backend
+python app.py
+
+# serve frontend
+python3 -m http.server 8000
+# visit http://localhost:8000/frontend.html
+
