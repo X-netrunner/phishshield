@@ -1,5 +1,5 @@
 # phishshield
-This is a project prototype done for an hackthon ( CodeRift ) hosted by Unstop.
+A lightweight hybrid phishing detector combining explainable heuristics with a compact ML model. Provides a real-time Detection Confidence score with transparent reasons and integrates easily as a web UI, browser extension, or API. (Demo + prototype for CodeRift hackathon.)
 
 Files:
 - frontend.html
