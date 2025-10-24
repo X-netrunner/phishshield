@@ -10,7 +10,7 @@ Files:
 - requirements.txt
 - scans.db (created at runtime)
 
-Quick start (Windows / Linux / macOS)
+# Quick start (Windows / Linux / macOS)
 1. Create a virtual environment:
    python -m venv venv
    source venv/bin/activate   # macOS/Linux
@@ -40,13 +40,13 @@ Create final ZIP (optional):
   zip -r PhishShield_Final.zip frontend.html app.py model.pkl vectorizer.pkl requirements.txt README.md model_train.py
   (Windows: use 7-zip or `tar -a -c -f PhishShield_Final.zip <files>`)
 
-Security:
+# Security:
 - The backend does not visit target URLs; it only analyzes the string and optionally calls WHOIS or VirusTotal if enabled.
 - If you enable VirusTotal, be mindful of API limits/terms.
 
---->TLDR /Exact Commands to run locally
+### --->TLDR /Exact Commands to run locally
 
-#INSTALLTION ON WINDOWS
+## INSTALLTION ON WINDOWS
 # 1. clone repo
 git clone https://github.com/your-username/PhishShield.git
 cd PhishShield
@@ -58,19 +58,19 @@ venv\Scripts\activate
 # 3. install deps
 pip install -r requirements.txt
 
-# 4a. (optional) create model files if not included
+# 4a. (optional) create model of your own
 python model_train.py   # creates model.pkl + vectorizer.pkl
 
 # 4b. run backend
 python app.py
 
 # 5. open frontend
-# Option 1: double-click frontend.html
-# Option 2 (serve static):
+Option 1: double-click frontend.html
+Option 2 (serve static):
 python -m http.server 8000
-# visit: http://localhost:8000/frontend.html
+visit: http://localhost:8000/frontend.html
 
-#INSTALLATION ON LINUX/MACOS
+## INSTALLATION ON LINUX/MACOS
 git clone https://github.com/your-username/PhishShield.git
 cd PhishShield
 
