@@ -1,0 +1,7 @@
+Flask>=2.0
+flask-cors
+joblib
+scikit-learn
+requests
+python-whois
+panda
