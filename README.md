@@ -86,5 +86,5 @@ python app.py
 
 # serve frontend
 python3 -m http.server 8000
-# visit http://localhost:8000/frontend.html
+visit http://localhost:8000/frontend.html
 
